@@ -30,6 +30,18 @@ window.onscroll = function () {
     }
 };
 
+/*Galeria*/
+let expand = document.querySelector('.expanded');
+
+function onClickPhoto(img) {
+    expand.classList.add('active');
+    expand.getElementsByTagName("img")[0].src = './static/img/' + img + '.png';
+}
+
+function closePhoto() {
+    expand.classList.remove('active');
+    expand.getElementsByTagName("img")[0].src = '';
+}
 
 /*EMAIL*/
 let sending = document.querySelector('.dogsending');

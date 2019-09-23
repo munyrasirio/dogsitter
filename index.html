@@ -7,9 +7,9 @@
     	<meta name='description' content='DESCRIPTION'/>
 		<link rel='canonical' href='/'/>
 		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Amatic+SC|Nova+Mono'>
-		<link rel='stylesheet' href='/static/css/reset.min.css'>
-		<link rel='stylesheet' href='/static/css/index.css'>
-		<link rel='shortcut icon' type='image/png' href='/static/img/favicon.png'/>
+		<link rel='stylesheet' href='./static/css/reset.min.css'>
+		<link rel='stylesheet' href='./static/css/index.css'>
+		<link rel='shortcut icon' type='image/png' href='./static/img/favicon.png'/>
 	</head>
 	<body>
 		<header id='topo'>
@@ -23,7 +23,7 @@
 				</ul>
 				<div class='mask'></div>
 			</nav>
-			<img class='logo' src='/static/img/logo.svg' alt='Logo' title='Logo'>
+			<img class='logo' src='./static/img/logo.svg' alt='Logo' title='Logo'>
 			<h1>Quer um hotelzinho seguro e aconchegante para deixar seu cãozinho ou um passeio divertido? Conte comigo!</h1>
 			<div class='waves up'></div>
 		</header>
@@ -65,22 +65,25 @@
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
 				</div>
 				<div class='gallery'>
-					<div><img src='/static/img/example4.png'></div>
-					<div><img src='/static/img/example1.png'></div>
-					<div><img src='/static/img/example2.png'></div>
-					<div><img src='/static/img/example3.png'></div>
-					<div><img src='/static/img/example4.png'></div>
-					<div><img src='/static/img/example1.png'></div>
-					<div><img src='/static/img/example2.png'></div>
-					<div><img src='/static/img/example3.png'></div>
-					<div><img src='/static/img/example4.png'></div>
+					<div onclick="onClickPhoto('example4')"><img src='./static/img/example4.png'></div>
+					<div onclick="onClickPhoto('example1')"><img src='./static/img/example1.png'></div>
+					<div onclick="onClickPhoto('example2')"><img src='./static/img/example2.png'></div>
+					<div onclick="onClickPhoto('example3')"><img src='./static/img/example3.png'></div>
+					<div onclick="onClickPhoto('example4')"><img src='./static/img/example4.png'></div>
+					<div onclick="onClickPhoto('example1')"><img src='./static/img/example1.png'></div>
+					<div onclick="onClickPhoto('example2')"><img src='./static/img/example2.png'></div>
+					<div onclick="onClickPhoto('example3')"><img src='./static/img/example3.png'></div>
+					<div onclick="onClickPhoto('example4')"><img src='./static/img/example4.png'></div>
+				</div>
+				<div class='expanded' onclick='closePhoto()'>
+					<img class='photo'  src=''/>
 				</div>
 			</div>
 		</main>
 		<footer>
 			<div class='contato' id='contato'>
 				<div>
-					<img src='/static/img/wp.svg' alt='Whatsapp' title='Whatsapp'>
+					<img src='./static/img/wp.svg' alt='Whatsapp' title='Whatsapp'>
 					<p>(00) 00000-0000</p>
 				</div>
 				<p>Entre em contato ou se preferir, envie uma mensagem</p>
@@ -90,7 +93,7 @@
 					<div class='endereco'>
 						<div class='mapa'><div id='map'></div></div>
 						<div>
-							<img src='/static/img/pin.svg' alt='pin' title='pin'>
+							<img src='./static/img/pin.svg' alt='pin' title='pin'>
 							<div>
 								<p>Rua Fictícia, 000</p>
 								<p>Cidade - Estado/UF</p>
@@ -115,17 +118,17 @@
 								<p>Enviando e-mail...</p>
 							</div>
 						</div>
-						<img class='pata' src='/static/img/paw.svg' alt='patinha' title='patinha'>
+						<img class='pata' src='./static/img/paw.svg' alt='patinha' title='patinha'>
 					</div>
 				</div>
 			</div>
 			<div class='nebtech'>
-				<a href='/'><img src='static/img/nt.svg'></a>
+				<a href='/'><img src='./static/img/nt.svg'></a>
 				<p>Desenvolvido por Nebula Tech 2019. Todos os direitos reservados</p>
 			</div>
 		</footer>
-		<script type='text/javascript' src='/static/js/smooth-scroll.polyfills.min.js'></script>
-		<script type='text/javascript' src='/static/js/scripts.js' async></script>
+		<script type='text/javascript' src='./static/js/smooth-scroll.polyfills.min.js'></script>
+		<script type='text/javascript' src='./static/js/scripts.js' async></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0cYj4zp4PSxC0GBH4pYTpaUsEkI3t744&callback=startMap" type="text/javascript"></script>
 		<script>
 			var scroll = new SmoothScroll('a[href*="#"]');

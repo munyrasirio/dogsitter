@@ -305,7 +305,7 @@ main {
 	border-radius: 50%;
 }
 .sobre div:nth-child(1) span {
-	background: url('../img/example1.jpg') no-repeat;
+	background: url('../img/example1.png') no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -314,7 +314,7 @@ main {
 .sobre div:nth-child(4) span,
 .sobre div:nth-child(5) span,
 .sobre div:nth-child(6) span {
-	background: url('../img/example3.jpg') no-repeat;
+	background: url('../img/example3.png') no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -394,6 +394,7 @@ main {
 	display: inline-block;
 	height: 230px;
 	width: 230px;
+	cursor: pointer;
 }
 
 .gallery img {
@@ -406,6 +407,33 @@ main {
 	transition: all 0.3s;
 	transform: scale(1.1);
 }
+
+.expanded {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.expanded.active {
+	display: initial;
+}
+
+.photo {
+	position: fixed;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
 @media (min-width: 900px) {
 	.gallery {
 		margin: 0 5% 0 15px;
@@ -533,6 +561,7 @@ main {
 	align-items: center;
 	justify-content: center;
 	margin: 10px;
+	min-height: 285px;
 }
 .inputs {
 	display: flex;
@@ -576,13 +605,16 @@ input:focus, textarea:focus, #sendbtn:focus {
 	background-color: #960045;
 	transition: background-color 0.5s;
 }
+
+#erro {
+	height: 29px;
+}
 .alert {
     display: inline-block;
     font-family: 'Nova Mono';
 	color: #ea1a00;
     font-size: 0.9em;
     text-align: center;
-    padding: 5px;
     line-height: 1.2em;
     font-weight: bold;
     width: 100%;
