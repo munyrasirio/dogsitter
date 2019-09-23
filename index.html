@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+	<head>
+		<title>Petsitter</title>
+		<meta charset='utf-8'/>
+    	<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'/>
+    	<meta name='description' content='DESCRIPTION'/>
+		<link rel='canonical' href='/'/>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Amatic+SC|Nova+Mono'>
+		<link rel='stylesheet' href='/static/css/reset.min.css'>
+		<link rel='stylesheet' href='/static/css/index.css'>
+		<link rel='shortcut icon' type='image/png' href='/static/img/favicon.png'/>
+	</head>
+	<body>
+		<header id='topo'>
+			<button type='button' class='nav-btn' onclick='openMenu()'><span/></button>
+			<nav>
+				<ul>
+					<li><a href='#topo' title='topo'><span></span><p>Home</p></a></li>
+					<li><a href='#sobre' title='sobre'><span></span><p>Sobre mim</p></a></li>
+					<li><a href='#servicos' title='sobre'><span></span><p>O que faço</p></a></li>
+					<li><a href='#contato' title='contato'><span></span><p>Contato</p></a></li>
+				</ul>
+				<div class='mask'></div>
+			</nav>
+			<img class='logo' src='/static/img/logo.svg' alt='Logo' title='Logo'>
+			<h1>Quer um hotelzinho seguro e aconchegante para deixar seu cãozinho ou um passeio divertido? Conte comigo!</h1>
+			<div class='waves up'></div>
+		</header>
+		<main>
+			<div class='sobre' id='sobre'>
+				<div>
+					<span></span>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud.</p>
+				</div>
+				<div>
+					<span></span>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud.</p>
+				</div>
+				<div>
+					<span></span>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud.</p>
+				</div>
+				<div>
+					<span></span>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud.</p>
+				</div>
+				<div>
+					<span></span>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud.</p>
+				</div>
+				<div>
+					<span></span>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud.</p>
+				</div>				
+				<div class='waves down'></div>
+			</div>
+			<div class='servicos' id='servicos'>
+				<div class='conteudo'>
+					<h2>Hotelzinho para cães</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent.</p>
+					<h2>Passeio com cães</h2>
+					<p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
+				</div>
+				<div class='gallery'>
+					<div><img src='/static/img/example4.png'></div>
+					<div><img src='/static/img/example1.png'></div>
+					<div><img src='/static/img/example2.png'></div>
+					<div><img src='/static/img/example3.png'></div>
+					<div><img src='/static/img/example4.png'></div>
+					<div><img src='/static/img/example1.png'></div>
+					<div><img src='/static/img/example2.png'></div>
+					<div><img src='/static/img/example3.png'></div>
+					<div><img src='/static/img/example4.png'></div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class='contato' id='contato'>
+				<div>
+					<img src='/static/img/wp.svg' alt='Whatsapp' title='Whatsapp'>
+					<p>(00) 00000-0000</p>
+				</div>
+				<p>Entre em contato ou se preferir, envie uma mensagem</p>
+			</div>
+			<div class='footer'>
+				<div class='container'>
+					<div class='endereco'>
+						<div class='mapa'><div id='map'></div></div>
+						<div>
+							<img src='/static/img/pin.svg' alt='pin' title='pin'>
+							<div>
+								<p>Rua Fictícia, 000</p>
+								<p>Cidade - Estado/UF</p>
+							</div>
+						</div>
+					</div>
+					<div class='email'>
+						<div class='padrao'></div>
+						<div class='form'>
+							<div>
+								<div class='inputs'>
+									<input id='name' type='text' placeholder='Nome'>
+									<input id='email' type='email' placeholder='E-mail'>
+									<input id='phone' type='text' placeholder='Telefone'>
+									<textarea id='message' rows='3' placeholder='Digite sua mensagem...'></textarea>
+									<span id='erro' class='none'></span>
+								</div>
+								<button id='sendbtn' type='submit' onclick='sendEmail()'>Enviar</button>
+							</div>
+							<div class='dogsending'>
+								<span></span>
+								<p>Enviando e-mail...</p>
+							</div>
+						</div>
+						<img class='pata' src='/static/img/paw.svg' alt='patinha' title='patinha'>
+					</div>
+				</div>
+			</div>
+			<div class='nebtech'>
+				<a href='/'><img src='static/img/nt.svg'></a>
+				<p>Desenvolvido por Nebula Tech 2019. Todos os direitos reservados</p>
+			</div>
+		</footer>
+		<script type='text/javascript' src='/static/js/smooth-scroll.polyfills.min.js'></script>
+		<script type='text/javascript' src='/static/js/scripts.js' async></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0cYj4zp4PSxC0GBH4pYTpaUsEkI3t744&callback=startMap" type="text/javascript"></script>
+		<script>
+			var scroll = new SmoothScroll('a[href*="#"]');
+		</script>
+	</body>
+</html>
